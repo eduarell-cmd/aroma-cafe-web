@@ -4,6 +4,14 @@ Sitio web estático para la cafetería ficticia **Aroma Café**, diseñado para 
 
 Construido puramente con **HTML5 semántico** y **CSS3 moderno**, sin dependencias ni frameworks externos, garantizando una estructura limpia, comprensible y adaptable a cualquier dispositivo móvil o de escritorio.
 
+## 👥 Equipo
+
+Proyecto desarrollado por estudiantes de la **UTCH BIS — Ingeniería en Desarrollo de Software**:
+
+- **AngelDittrich**
+- **DamianOlivar**
+- **EduardoArellanes**
+
 ---
 
 ## 📁 Estructura del Proyecto
