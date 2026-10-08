@@ -110,6 +110,13 @@ Cada miembro del equipo puede clonar el repositorio y trabajar en una funcionali
 
 ---
 
+## 🤝 Flujo de trabajo del equipo
+
+Ramas: `main` (estable) ← `develop` (integración) ← `feature/*` / `hotfix/*`.
+Las reglas de ramas, commits y Pull Requests están en [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+---
+
 ## 📜 Licencia
 
 Proyecto con fines puramente educativos y de práctica. Libre para modificar, expandir y usar en talleres de Git y desarrollo web.
