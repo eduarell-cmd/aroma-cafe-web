@@ -364,6 +364,11 @@ a {
   text-transform: uppercase;
 }
 
+.product-badge-limited {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
 .product-icon {
   font-size: 2.8rem;
   margin-bottom: 1rem;
