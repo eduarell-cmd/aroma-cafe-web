@@ -47,8 +47,11 @@
               class="form-control" 
               placeholder="nombre@ejemplo.com" 
               autocomplete="email"
+              aria-describedby="login-email-help"
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
               required
             >
+            <small id="login-email-help" class="form-notice" style="text-align: left;">Usa el correo con el que te registraste en el club.</small>
           </div>
 
           <div class="form-group">
@@ -60,10 +63,13 @@
                 class="form-control" 
                 placeholder="••••••••" 
                 autocomplete="current-password"
+                aria-describedby="login-password-help"
+                minlength="6"
                 required
               >
               <button type="button" id="btn-toggle-password" aria-label="Mostrar contraseña" style="position: absolute; right: 0.8rem; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; font-size: 1.1rem;">👁️</button>
             </div>
+            <small id="login-password-help" class="form-notice" style="text-align: left;">Mínimo 6 caracteres.</small>
           </div>
 
           <div class="form-options">
