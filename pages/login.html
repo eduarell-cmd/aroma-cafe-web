@@ -53,14 +53,17 @@
 
           <div class="form-group">
             <label for="login-password">Contraseña</label>
-            <input 
-              type="password" 
-              id="login-password" 
-              class="form-control" 
-              placeholder="••••••••" 
-              autocomplete="current-password"
-              required
-            >
+            <div style="position: relative;">
+              <input 
+                type="password" 
+                id="login-password" 
+                class="form-control" 
+                placeholder="••••••••" 
+                autocomplete="current-password"
+                required
+              >
+              <button type="button" id="btn-toggle-password" aria-label="Mostrar contraseña" style="position: absolute; right: 0.8rem; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; font-size: 1.1rem;">👁️</button>
+            </div>
           </div>
 
           <div class="form-options">
@@ -115,6 +118,16 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const passwordInput = document.getElementById('login-password');
+    const toggleBtn = document.getElementById('btn-toggle-password');
+    toggleBtn.addEventListener('click', () => {
+      const visible = passwordInput.type === 'text';
+      passwordInput.type = visible ? 'password' : 'text';
+      toggleBtn.setAttribute('aria-label', visible ? 'Mostrar contraseña' : 'Ocultar contraseña');
+    });
+  </script>
 
 </body>
 </html>
